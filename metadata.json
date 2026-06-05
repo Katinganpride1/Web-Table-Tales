@@ -1,0 +1,6 @@
+{
+  "name": "Table & Tales",
+  "description": "Warm & cozy board game cafe in Palangkaraya with an immersive game library, interactive reservation system, and a Virtual Game Master.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

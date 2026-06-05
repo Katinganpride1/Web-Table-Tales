@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Literata", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+  --color-primary: #9a4029;
+  --color-primary-container: #b9583e;
+  --color-on-primary-container: #fffbff;
+  --color-secondary: #496455;
+  --color-secondary-container: #ccead6;
+  --color-on-secondary-container: #4f6a5b;
+  --color-tertiary: #705740;
+  --color-tertiary-container: #8a7057;
+  --color-on-tertiary-container: #fffbff;
+  --color-bg-cozy: #faf9f8;
+  --color-on-background: #1a1c1c;
+
+  --animate-scale-up: scale-up 0.3s ease-out;
+  --animate-fade-in: fade-in 0.4s ease-out;
+}
+
+@keyframes scale-up {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Custom Design System Classes */
+.wooden-accent {
+  background-image: radial-gradient(circle at 2px 2px, rgba(75, 54, 33, 0.04) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.wood-grain-texture {
+  background-image: url("https://www.transparenttextures.com/patterns/wood-pattern-with-twigs.png");
+  opacity: 0.03;
+}
+
+.wood-texture {
+  background-image: url("https://www.transparenttextures.com/patterns/wood-pattern.png");
+  opacity: 0.03;
+}
+
+.shelf-shadow {
+  box-shadow: 0 4px 6px -1px rgba(75, 54, 33, 0.08), 0 2px 4px -1px rgba(75, 54, 33, 0.04);
+}
+
+.soft-shelf-shadow {
+  box-shadow: 0 4px 6px -1px rgba(75, 54, 33, 0.08), 0 2px 4px -1px rgba(75, 54, 33, 0.04);
+}
+
+.custom-shadow {
+  box-shadow: 0 4px 12px rgba(75, 54, 33, 0.08);
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.shelf-separator {
+  height: 4px;
+  background: linear-gradient(to bottom, #705740, #4b3621);
+  border-radius: 2px;
+}
+
+.grain-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.grain-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+  opacity: 0.05;
+  pointer-events: none;
+}
+
